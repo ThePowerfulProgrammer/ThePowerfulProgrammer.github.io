@@ -237,6 +237,15 @@ footer a {
     font-family: 'Great Vibes', cursive;
 }
 
+.bg-body-tertiary {
+    background-color: #E3D3E4;
+    color: black;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+}
+
 @media (max-width:550px) {
   .list-item h2 {
     font-size: 1.25rem;
@@ -329,8 +338,6 @@ footer a {
           </div>
         </div>
 
-        <div class="container ">
-          <div class="row">
               <!-- Img 1-->
 
             <div class="col-md-12 col-sm-12">
@@ -457,23 +464,18 @@ footer a {
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="container bg-dark  rounded">
-            <!-- <h2 class="display-3">In Closing! </h2>
-            <p class="lead">Goals Are Actions, not Dreams!</p> -->
-            <hr>
-            <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-md " >
-                <li class="nav-item footer-links" ><a href="#" class="nav-link px-2 ">Home</a></li>
-                <li class="nav-item footer-links"><a href="#" class="nav-link px-2">Features</a></li>
-                <li class="nav-item footer-links"><a href="#" class="nav-link px-2">Pricing</a></li>
-                <li class="nav-item footer-links"><a href="#" class="nav-link px-2">FAQs</a></li>
-                <li class="nav-item footer-links"><a href="#" class="nav-link px-2">About</a></li>
-              </ul>
-              <h4 class="card-title copyright text-center text-white">&copy The Powerful Programmer</h4>
-            </footer>
+
+          <div class="col-md-12 col-sm-12">
+              <footer class="bg-body-tertiary text-center text-lg-start mb-2 mu-2">
+                  <div class="text-center p-3">
+                      <p class="footer-text">© <span id="year">--</span> Copyright: Sheev Palpatine</p>
+                      <script>
+                          document.getElementById('year').innerHTML = new Date().getFullYear();
+                      </script>
+                  </div>
+              </footer>
           </div>
-        </div>
+
       </div>
     </div>
 
