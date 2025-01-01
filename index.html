@@ -15,7 +15,7 @@
 
 <!-- Style     -->
 
-/*
+<!--
 Fonts :
     Headings: Londrina Solid
     Sub-headings: Josefin Slab
@@ -54,16 +54,8 @@ Londrina Solid: CSS classes
   font-style: normal;
 }
 
-Josefin Slab: CSS class for a variable style
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 700
 
-.josefin-slab-<uniquifier> {
-  font-family: "Josefin Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+
 
 Merriweather: CSS classes
 .merriweather-light {
@@ -114,560 +106,563 @@ Merriweather: CSS classes
   font-style: italic;
 }
 
-*/
+-->
 
-.londrina-solid-regular {
-    font-family: "Londrina Solid", serif;
-    font-weight: 400;
-    font-style: normal;
+<style>
+    .londrina-solid-regular {
+        font-family: "Londrina Solid", serif;
+        font-weight: 400;
+        font-style: normal;
+        
+    }
     
-}
-
-.josefin-slab-subheadings {
-    font-family: "Josefin Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;    
-}
-
-.merriweather-regular {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body 
-{
-  background-color: #f8fafc;
-}
-
-/* Navbar */ 
-
-.navbar-brand
-{
-    color: #f8fafc;
-    font-size: 2rem;
-}
-
-
-
-.nav-item 
-{
-  font-size: 2rem;
-  color: #f8fafc;
-}
-
-.navbar-brand:hover 
-{
-  border-bottom: 1px solid #f8fafc;
-}
-
-.nav-item:hover 
-{
-  border-bottom: 1px solid #f8fafc;
-}
-
-/* Banner section */
-.banner 
-{
-    background-image: url("https://github.com/ThePowerfulProgrammer/Selfie/blob/main/skybgOne.png?raw=true");
-    width: 100%;
+    .josefin-slab-subheadings {
+        font-family: "Josefin Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;    
+    }
     
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.banner 
-{
-    display: flex;
-    justify-content: center;
-}
-
-.banner-text 
-{
-    margin: 200px 0 200px 0;
-    width: 80%;    
-}
-
-.banner-text .banner-heading 
-{
-    color: #f8fafc;
-    text-transform: uppercase;
-    font-size: 8.5rem;
-    -webkit-text-stroke: 5px #000000;   
-}
-
-.banner-text .banner-heading-one
-{
-    color: #f8fafc;
-    text-transform: uppercase;
-    text-decoration: underline white;
-    font-size: 8.5rem;
-    -webkit-text-stroke: 5px #000000;
-    margin-bottom: 75px;    
-}
-
-.banner-text  p 
-{
-    color: #f8fafc;
-    font-size: 3.5rem;
-    font-weight: 700;
-    -webkit-text-stroke: 2px #000000;
+    .merriweather-regular {
+      font-family: "Merriweather", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
     
-}
-
-
-/* Intro section */
-
-.intro-section 
-{
-  width: 98%;
-  height: 1080px;
-  border: 5px solid black;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.intro-section 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro-section h2 
-{
-  font-size: 2.5rem;
-  text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.services-container 
-{
-  width: 98%;
-  height: 1080px;
-  border: 5px solid black;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 50px;
-}
-
-.services-container 
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 125px;
-}
-
-.services-container div 
-{
-  width: 24%;
-  height: 48%;
-  border-radius: 20px;
-  font-size: 2.25rem;
-  font-weight: bold;
-}
-
-.services-container div 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.services-container .card 
-{
-  transform-style: preserve-3d;
-  transition: ease-in-out 800ms;
-}
-
-.services-container .card:hover 
-{
-  transform: rotate(360deg) scale(0.6);
-  
-}
-
-.item-1 
-{
-  background-color: #f8fafc;
-  color: #000000;
-}
-
-.item-2 
-{
-  background-color: #D9EAFD;
-  text-align: center;
-  color: #000000;
-}
-
-.item-3 
-{
-  background-color: #D81E5B;
-  color: #000000;
-}
-
-.item-4 
-{
-  background-color: #000000;
-  color: white;
-  text-align: center;
-}
-
-.item-5 
-{
-  background-color: #f8fafc;  
-  color: #000000;
-}
-
-.item-6 
-{
-  background-color: #000000;
-  color: white;
-  text-align: center;
-}
-
-.item-7 
-{
-  background-color: #D9EAFD;
-  text-align: center;
-  color: #000000;
-}
-
-.item-8 
-{
-  background-color: #D81E5B;
-  text-align: center;
-  color: #000000;
-}
-
-
-.services-container .active:hover 
-{
-  box-shadow: -3px 4px 25px 0px rgba(0,0,0,1);
-}
-
-
-/* About */
-
-.about-section 
-{
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
-
-.about-section 
-{
-  width: 98%;
-  height: 1080px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about-child1 
-{
-  background-color: #f8fafc;
-  width: 50%;
-  height: 100%;
-}
-
-.about-child1 .image 
-{
-  display: block;
-  width: 500px;
-  padding: 3rem;
-  /* background-color: red; */
-}
-
-.about-child1 .image img 
-{
-  width: 100%;
-  border-radius: 20px;
-}
-
-.about-child1 h2 
-{
-  display: block;
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.about-child1 p 
-{
-  font-weight: bold;
-  display: block;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.about-child1 button 
-{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: block;
-  text-align: center;
-  font-size: 1.5rem;
-  background-color: #000000;
-  margin-bottom: 25px;
-}
-
-.about-child1 .icon-container 
-{
-  margin-top: 25px;
-  width: 50%;
-  font-size: 2.5rem;
-  display: flex;
-
-  justify-content: center;
-  gap: 50px;
-}
-
-.about-child1 
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.about-child2 
-{
-  background-color: #D9EAFD;
-  width: 50%;
-  height: 100%;
-}
-
-.about-child2 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-child2Text 
-{
-  text-align: center;
-}
-
-.about-child2Text h2
-{
-  font-size: 5rem;
-  padding: 12px 12px 12px 12px;
-  font-weight: 700;
-  margin-bottom: 35px;
-}
-
-.about-child2Text p 
-{
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 12px 12px 12px 12px;
-}
-
-.about-child2 .button-group 
-{
-  display: flex;
-  justify-content: space-evenly;
-  padding: 12px 12px 12px 12px;
-}
-
-.about-child2 .button-group .btn 
-{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  background-color: #000000;
-}
-
-
-/* Media queries */
-
-@media only screen and (max-width: 700px) 
-{
-
-  .nav-item:hover 
-  {
-    border-bottom: 0px;
-  }
-
-  .banner-text .banner-heading 
-  {
-      color: #f8fafc;
-      text-transform: uppercase;
-      font-size: 4rem;
-      -webkit-text-stroke: 1px #000000;   
-  }
-  
-  .banner-text .banner-heading-one
-  {
-      color: #f8fafc;
-      text-transform: uppercase;
-      text-decoration: underline white;
-      font-size: 4rem;
-      -webkit-text-stroke: 1px #000000;
-      margin-bottom: 75px;    
-  }
-
-.banner-text  p 
-  {
-      color: #f8fafc;
+    body 
+    {
+      background-color: #f8fafc;
+    }
+    
+    /* Navbar */ 
+    
+    .navbar-brand
+    {
+        color: #f8fafc;
+        font-size: 2rem;
+    }
+    
+    
+    
+    .nav-item 
+    {
       font-size: 2rem;
-      font-weight: 700;
-      -webkit-text-stroke: 0.5px #000000;
+      color: #f8fafc;
+    }
+    
+    .navbar-brand:hover 
+    {
+      border-bottom: 1px solid #f8fafc;
+    }
+    
+    .nav-item:hover 
+    {
+      border-bottom: 1px solid #f8fafc;
+    }
+    
+    /* Banner section */
+    .banner 
+    {
+        background-image: url("https://github.com/ThePowerfulProgrammer/Selfie/blob/main/skybgOne.png?raw=true");
+        width: 100%;
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .banner 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner-text 
+    {
+        margin: 200px 0 200px 0;
+        width: 80%;    
+    }
+    
+    .banner-text .banner-heading 
+    {
+        color: #f8fafc;
+        text-transform: uppercase;
+        font-size: 8.5rem;
+        -webkit-text-stroke: 5px #000000;   
+    }
+    
+    .banner-text .banner-heading-one
+    {
+        color: #f8fafc;
+        text-transform: uppercase;
+        text-decoration: underline white;
+        font-size: 8.5rem;
+        -webkit-text-stroke: 5px #000000;
+        margin-bottom: 75px;    
+    }
+    
+    .banner-text  p 
+    {
+        color: #f8fafc;
+        font-size: 3.5rem;
+        font-weight: 700;
+        -webkit-text-stroke: 2px #000000;
+        
+    }
+    
+    
+    /* Intro section */
+    
+    .intro-section 
+    {
+      width: 98%;
+      height: 1080px;
+      border: 5px solid black;
+      margin: 0 auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    
+    .intro-section 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .intro-section h2 
+    {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    
+    .services-container 
+    {
+      width: 98%;
+      height: 1080px;
+      border: 5px solid black;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding: 50px;
+    }
+    
+    .services-container 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 125px;
+    }
+    
+    .services-container div 
+    {
+      width: 24%;
+      height: 48%;
+      border-radius: 20px;
+      font-size: 2.25rem;
+      font-weight: bold;
+    }
+    
+    .services-container div 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .services-container .card 
+    {
+      transform-style: preserve-3d;
+      transition: ease-in-out 800ms;
+    }
+    
+    .services-container .card:hover 
+    {
+      transform: rotate(360deg) scale(0.6);
       
-  }
+    }
+    
+    .item-1 
+    {
+      background-color: #f8fafc;
+      color: #000000;
+    }
+    
+    .item-2 
+    {
+      background-color: #D9EAFD;
+      text-align: center;
+      color: #000000;
+    }
+    
+    .item-3 
+    {
+      background-color: #D81E5B;
+      color: #000000;
+    }
+    
+    .item-4 
+    {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+    }
+    
+    .item-5 
+    {
+      background-color: #f8fafc;  
+      color: #000000;
+    }
+    
+    .item-6 
+    {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+    }
+    
+    .item-7 
+    {
+      background-color: #D9EAFD;
+      text-align: center;
+      color: #000000;
+    }
+    
+    .item-8 
+    {
+      background-color: #D81E5B;
+      text-align: center;
+      color: #000000;
+    }
+    
+    
+    .services-container .active:hover 
+    {
+      box-shadow: -3px 4px 25px 0px rgba(0,0,0,1);
+    }
+    
+    
+    /* About */
+    
+    .about-section 
+    {
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+    
+    .about-section 
+    {
+      width: 98%;
+      height: 1080px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .about-child1 
+    {
+      background-color: #f8fafc;
+      width: 50%;
+      height: 100%;
+    }
+    
+    .about-child1 .image 
+    {
+      display: block;
+      width: 500px;
+      padding: 3rem;
+      /* background-color: red; */
+    }
+    
+    .about-child1 .image img 
+    {
+      width: 100%;
+      border-radius: 20px;
+    }
+    
+    .about-child1 h2 
+    {
+      display: block;
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .about-child1 p 
+    {
+      font-weight: bold;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    .about-child1 button 
+    {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding-left: 8rem;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      display: block;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #000000;
+      margin-bottom: 25px;
+    }
+    
+    .about-child1 .icon-container 
+    {
+      margin-top: 25px;
+      width: 50%;
+      font-size: 2.5rem;
+      display: flex;
+    
+      justify-content: center;
+      gap: 50px;
+    }
+    
+    .about-child1 
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+    .about-child2 
+    {
+      background-color: #D9EAFD;
+      width: 50%;
+      height: 100%;
+    }
+    
+    .about-child2 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .about-child2Text 
+    {
+      text-align: center;
+    }
+    
+    .about-child2Text h2
+    {
+      font-size: 5rem;
+      padding: 12px 12px 12px 12px;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+    
+    .about-child2Text p 
+    {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 12px 12px 12px 12px;
+    }
+    
+    .about-child2 .button-group 
+    {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 12px 12px 12px 12px;
+    }
+    
+    .about-child2 .button-group .btn 
+    {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding-left: 8rem;
+      padding-right: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #000000;
+    }
+    
+    
+    /* Media queries */
+    
+    @media only screen and (max-width: 700px) 
+    {
+    
+      .nav-item:hover 
+      {
+        border-bottom: 0px;
+      }
+    
+      .banner-text .banner-heading 
+      {
+          color: #f8fafc;
+          text-transform: uppercase;
+          font-size: 4rem;
+          -webkit-text-stroke: 1px #000000;   
+      }
+      
+      .banner-text .banner-heading-one
+      {
+          color: #f8fafc;
+          text-transform: uppercase;
+          text-decoration: underline white;
+          font-size: 4rem;
+          -webkit-text-stroke: 1px #000000;
+          margin-bottom: 75px;    
+      }
+    
+    .banner-text  p 
+      {
+          color: #f8fafc;
+          font-size: 2rem;
+          font-weight: 700;
+          -webkit-text-stroke: 0.5px #000000;
+          
+      }
+    
+      .intro-section 
+      {
+        border: transparent;
+      }
+    
+      .intro-section h2 
+      {
+    
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    
+      /* .services-container .card:hover 
+      {
+    
+      } */
+    
+    } 
+    
+    @media only screen and (max-width: 450px) 
+    {
+      .about-child1 h2 
+      {
+        display: block;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      .about-child1 p 
+      {
+        font-weight: bold;
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+      }
+    } 
+    
+    
+    @media only screen and (max-width: 900px)  
+    {
+      .services-container 
+      {
+        border: 0;
+        gap: 10px;
+        height: auto;
+        padding: 0 10px 0 10px;  
+        margin-bottom: 25px;
+      }
+      
+      .services-container .active  
+      {
+        width: 100%;
+        height: 500px;
+        border: transparent;
+        margin-bottom: 1.5rem;
+      }
+    
+      .services-container .item-1 
+      {
+        order: 7;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        display: none;
+      }
+    
+      .services-container .item-5 
+      {
+        order: 8;
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        display: none;
+      }
+    
+      .about-child1 
+      {
+        width: 100%;
+      }
+    
+      .about-child2 
+      {
+        width: 100%;
+      }
+    
+    
+    }
+    
+    @media only screen and (max-width: 1200px) 
+    {
+      .services-container div
+      {
+        font-size: 20px;
+      }
+    
+      .about-child2Text h2 
+      {
+        font-size: 2rem;
+      }
+    
+      .about-child2 .button-group 
+      {
+        flex-wrap: wrap
+      }
+    
+      .about-child2Text p 
+      {
+        font-size: 0.9rem;
+        margin: 12px 12px 12px 12px;
+      }
+    
+      .about-child2 .button-group .btn 
+      {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        font-size: 0.75rem;
+        background-color: #000000;
+      }
+    
+    }
+    
+    @media only screen and (max-width: 1400px) 
+    {
+    
+    
+      .about-child2 .button-group 
+      {
+        flex-wrap: wrap
+      }
+    }
+</style>
 
-  .intro-section 
-  {
-    border: transparent;
-  }
-
-  .intro-section h2 
-  {
-
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  /* .services-container .card:hover 
-  {
-
-  } */
-
-} 
-
-@media only screen and (max-width: 450px) 
-{
-  .about-child1 h2 
-  {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .about-child1 p 
-  {
-    font-weight: bold;
-    display: block;
-    font-size: 1rem;
-    text-align: center;
-  }
-} 
-
-
-@media only screen and (max-width: 900px)  
-{
-  .services-container 
-  {
-    border: 0;
-    gap: 10px;
-    height: auto;
-    padding: 0 10px 0 10px;  
-    margin-bottom: 25px;
-  }
-  
-  .services-container .active  
-  {
-    width: 100%;
-    height: 500px;
-    border: transparent;
-    margin-bottom: 1.5rem;
-  }
-
-  .services-container .item-1 
-  {
-    order: 7;
-    height: 100px;
-    width: 100%;
-    background-color: red;
-    display: none;
-  }
-
-  .services-container .item-5 
-  {
-    order: 8;
-    height: 100px;
-    width: 100%;
-    background-color: red;
-    display: none;
-  }
-
-  .about-child1 
-  {
-    width: 100%;
-  }
-
-  .about-child2 
-  {
-    width: 100%;
-  }
-
-
-}
-
-@media only screen and (max-width: 1200px) 
-{
-  .services-container div
-  {
-    font-size: 20px;
-  }
-
-  .about-child2Text h2 
-  {
-    font-size: 2rem;
-  }
-
-  .about-child2 .button-group 
-  {
-    flex-wrap: wrap
-  }
-
-  .about-child2Text p 
-  {
-    font-size: 0.9rem;
-    margin: 12px 12px 12px 12px;
-  }
-
-  .about-child2 .button-group .btn 
-  {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    font-size: 0.75rem;
-    background-color: #000000;
-  }
-
-}
-
-@media only screen and (max-width: 1400px) 
-{
-
-
-  .about-child2 .button-group 
-  {
-    flex-wrap: wrap
-  }
-}
 
 </head>
 <body>
