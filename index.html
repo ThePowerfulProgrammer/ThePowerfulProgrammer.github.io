@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="./fly.png">
+
 <style>
 
 
@@ -570,6 +572,20 @@
 
     }    
 
+   @media (max-width:380px) 
+    {
+        .section-three-a h3 
+        {
+            font-size: 0.75rem;
+        }
+
+        .section-three-b h3 
+        {
+            font-size: 1rem;
+        }        
+
+    }    
+
     @media (max-width:350px) 
     {
 
@@ -578,17 +594,7 @@
             font-size: 1rem;
         }           
 
-        .section-three-a h3 
-        {
-            font-size: 0.75rem;
-        }
-
-        .section-three-b h3 
-        {
-            font-size: 0.95rem;
-        }        
-
-    }    
+    }      
 </style>
 
 </head>
@@ -655,38 +661,97 @@
             let smackCount = 0;
             const imgB = document.querySelector("#imgB");
             const audio = document.querySelector("#myAudio");
+            const link = "https://drive.google.com/file/d/1rpVLJTZegW29sDxGJPS_rDozySqaahHU/view?usp=sharing";
 
             
             imgB.addEventListener("click", () => {
-                setTimeout(() => {
+                // Play audio
+                audio.currentTime = 0;
+                audio.play();
 
-                    if (smackCount <= 2) {
-                        audio.play();
-                        smackCount += 1;
-                    } else {
-                        imgB.classList.remove("imgAnimation");
+                // Increment smack count
+                smackCount += 1;
+
+
+                // After 3 clicks, copy link and alert
+                if (smackCount === 3) {
+                    // Safe clipboard write
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(link)
+                            .then(() => console.log("Link copied!"))
+                            .catch(() => console.log("Clipboard not available"));
                     }
 
-                    console.log(smackCount);
-                }, 1200); // delay in ms
+                    // Show alert
+                    alert("Paste this link into your browser: " + link);
+                    smackCount = 0;
+                }
             });
 
             imgB.addEventListener("touchstart", () => {
-                setTimeout(() => {
+                // Play audio
+                audio.currentTime = 0;
+                audio.play();
 
-                    if (smackCount <= 2) {
-                        audio.play();
-                        smackCount += 1;
-                    } else {
-                        imgB.classList.remove("touchstart");
+                // Increment smack count
+                smackCount += 1;
+                console.log("Smack count:", smackCount);
+
+                // After 3 clicks, copy link and alert
+                if (smackCount === 3) {
+                    // Safe clipboard write
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(link)
+                            .then(() => console.log("Link copied!"))
+                            .catch(() => console.log("Clipboard not available"));
                     }
 
-                    console.log(smackCount);
-                }, 1200); // delay in ms
+                    // Show alert
+                    alert("Paste this link into your browser: " + link);
+                    smackCount = 0;
+                }
             });            
 
+            const about = document.querySelector(".about");
+            const contact = document.querySelector(".contact");
+            const tc = document.querySelector(".tc");
+            const help = document.querySelector(".help");
 
+            about.addEventListener("touchstart", () => 
+            {
+                alert("Presents for Peach is currently an early concept application designed for my gf and I ");
+            })
+            about.addEventListener("click", () => 
+            {
+                alert("Presents for Peach is currently an early concept application designed for my gf and I ");
+            })            
 
+            contact.addEventListener("touchstart", () => 
+            {
+                alert("You can contact me via my linkedIn: https://www.linkedin.com/in/ashish-ramnath/");
+            })
+            contact.addEventListener("click", () => 
+            {
+                alert("You can contact me via my linkedIn: https://www.linkedin.com/in/ashish-ramnath/");
+            })           
+
+            tc.addEventListener("touchstart", () => 
+            {
+                alert("Access Denied!");
+            })
+            tc.addEventListener("click", () => 
+            {
+                alert("Access Denied!");
+            })
+            
+            help.addEventListener("touchstart", () => 
+            {
+                alert("A one page website, and you need help?!");
+            })
+            help.addEventListener("click", () => 
+            {
+                alert("A one page website, and you need help?!");
+            })            
 
         })
     </script>
