@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
 <style>
 
 
@@ -28,7 +31,12 @@
     font-style: normal;
     }
 
-
+    .story-script-regular {
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
     .section 
     {
         width: 100%;        
@@ -430,24 +438,49 @@
     
     .section-three 
     {
-        background-color: #D22D2D; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
     }
 
-    .section-three video 
+    .section-three-a 
     {
-        border: 1px solid white;
-        border-radius: 5px;
-        width: 80%;
-        height: 80%;
+        background: linear-gradient(45deg, #006400, #008000, #32CD32, #00FF00);
+        
+        display: flex;
+        justify-content: space-evenly;
     }
-    
-    .section-four
-    {       
-        background-color: #9A1212; 
-    }    
+
+    .section-three-a h3
+    {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .section-three-b 
+    {
+        width: 100%;
+        background-color: #1f2e06;
+        padding: 80px
+    }
+
+    .section-three-b h3 
+    {
+        font-size: 5rem;
+    }
+
+    .section-three-c
+    {
+        width: 100%;
+        background: black;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 1) 25%, rgba(3, 0, 255, 1) 50%);
+        padding: 5px;
+    }
+
+    .section-three-c h3 
+    {
+        margin-top: 10px;
+        color: white;
+        text-decoration: underline;
+    }
 
     @media (max-width: 1200px) 
     {
@@ -458,16 +491,28 @@
         }
     }
 
+    @media (max-width: 780px) 
+    {
+    
+        .section-three-a h3 
+        {
+            font-size: 1.5rem;
+        }
+
+        .section-three-b h3 
+        {
+            font-size: 3rem;
+        }        
+
+    }
+
     @media (max-width:600px) 
     {
-
 
         .section-one .s1-child h1
         {
             font-size: 2rem;
         }
-
-
 
         .cssload-main * {
         font-size: 62px;
@@ -476,8 +521,23 @@
         .section-two .imgB {
             width: 100px;
             height: 100px;
-        }           
-            
+        }        
+
+        .section-three-a h3 
+        {
+            font-size: 1rem;
+        }
+
+        .section-three-b 
+        {
+            padding: 80px
+        }
+
+
+        .section-three-b h3 
+        {
+            font-size: 2rem;
+        }                    
 
     }
 
@@ -493,6 +553,21 @@
         font-size: 58px;
         }
 
+        .section-three-a 
+        {
+            padding: 5px;
+        }
+
+        .section-three-a h3 
+        {
+            font-size: 1rem;
+        }
+
+        .section-three-b h3 
+        {
+            font-size: 1.25rem;
+        }               
+
     }    
 
     @media (max-width:350px) 
@@ -502,7 +577,16 @@
         {
             font-size: 1rem;
         }           
-            
+
+        .section-three-a h3 
+        {
+            font-size: 0.75rem;
+        }
+
+        .section-three-b h3 
+        {
+            font-size: 0.95rem;
+        }        
 
     }    
 </style>
@@ -539,6 +623,30 @@
         
     </div>
 
+
+    <div class="section section-three">
+        <div class="section-three-a">
+            <h3 class="about playfair-display-regular">ABOUT US</h3>
+            <h3 class="contact playfair-display-regular">CONTACT</h3>
+            <h3 class="tc playfair-display-regular">Terms & Conditions</h3>
+            <h3 class="help playfair-display-regular">HELP</h3>
+        </div>
+        <div class="section-three-b">
+            <h3 class="story-script-regular text-white text-center">
+                I suggest bookmarking this website.
+                <br>
+                There might be future surprises.  .  .
+                <br>
+                A good girl deserves gifts!
+            </h3>
+        </div>
+        <div class="section-three-c">
+            <h3 class="text-center great-vibes-regular">
+                Ashish Ramnath
+            </h3>
+        </div>
+
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => 
