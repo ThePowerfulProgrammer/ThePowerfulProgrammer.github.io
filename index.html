@@ -3,852 +3,583 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish Ramnath</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
 
+    <title>Presents For Peach</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Londrina+Solid:wght@100;300;400;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-<!-- Style     -->
-
-<!--
-Fonts :
-    Headings: Londrina Solid
-    Sub-headings: Josefin Slab
-    Body: Merriweather
-
-Colors:
-    Dominate: f8fafc
-    Complementary: D9EAFD
-    Accent One: BCCCDC
-    Accent Two: 9AA6B2
-    Raspberry accent: D81E5B
-
-Londrina Solid: CSS classes
-
-.londrina-solid-thin {
-  font-family: "Londrina Solid", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.londrina-solid-light {
-  font-family: "Londrina Solid", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.londrina-solid-regular {
-  font-family: "Londrina Solid", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.londrina-solid-black {
-  font-family: "Londrina Solid", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-
-
-
-Merriweather: CSS classes
-.merriweather-light {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.merriweather-regular {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.merriweather-bold {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.merriweather-black {
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.merriweather-light-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.merriweather-regular-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.merriweather-bold-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.merriweather-black-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
--->
-
 <style>
-    .londrina-solid-regular {
-        font-family: "Londrina Solid", serif;
-        font-weight: 400;
-        font-style: normal;
-        
+
+
+    .playfair-display-regular {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     }
-    
-    .josefin-slab-subheadings {
-        font-family: "Josefin Slab", serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;    
+
+    .great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
     }
-    
-    .merriweather-regular {
-      font-family: "Merriweather", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-    body 
+
+
+    .section 
     {
-      background-color: #f8fafc;
+        width: 100%;        
     }
-    
-    /* Navbar */ 
-    
-    .navbar-brand
+
+    .section-one 
     {
-        color: #f8fafc;
-        font-size: 2rem;
+        background-color: #354E09;
+        position: relative;
     }
-    
-    
-    
-    .nav-item 
+
+    .section-one img 
     {
-      font-size: 2rem;
-      color: #f8fafc;
-    }
-    
-    .navbar-brand:hover 
-    {
-      border-bottom: 1px solid #f8fafc;
-    }
-    
-    .nav-item:hover 
-    {
-      border-bottom: 1px solid #f8fafc;
-    }
-    
-    /* Banner section */
-    .banner 
-    {
-        background-image: url("https://github.com/ThePowerfulProgrammer/Selfie/blob/main/skybgOne.png?raw=true");
         width: 100%;
-        
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: auto;
+    }
+
+    .section-one .img-text 
+    {
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        top: 50%;
+        margin-inline: auto; 
+        width: fit-content;
+    }
+
+    .section-one .s1-child h1
+    {
+        text-transform: uppercase;
+        font-size: 3rem;
+    }    
+
+
+    .s-child-two 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .s-child-two img 
+    {
+        width: 250px;
+        height: 250px;
+    }
+
+    .section-two 
+    {
+        position: relative;
+        width: 100%;
     }
     
-    .banner 
+
+    .section-two .imgA
     {
+        width: 100%;
+        height: auto;        
+        display: block;
+    }
+
+    @keyframes gentleTilt 
+    {
+    0% {
+        transform-origin: bottom left;
+        rotate: 5deg;
+    }
+    50% {
+        transform-origin: bottom right;
+        rotate: 0deg;
+    }
+    100% {
+        transform-origin: bottom left;
+        rotate: 5deg;
+    }
+    }
+
+    .section-two .imgB {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);      
+          
+    }    
+
+    .section-two .imgAnimation 
+    {
+        animation: gentleTilt 0.75s ease-in-out infinite ;
+    }
+
+    /* From Uiverse.io by SouravBandyopadhyay */ 
+    .cssload-main {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translate(-100%, -240%);
+    -o-transform: translate(-100%, -240%);
+    -ms-transform: translate(-100%, -240%);
+    -webkit-transform: translate(-100%, -240%);
+    -moz-transform: translate(-100%, -240%);
+    }
+
+    .cssload-main * {
+    font-size: 72px;
+    }
+
+    .cssload-heart {
+    animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -o-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -ms-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -webkit-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -moz-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    top: 50%;
+    content: '';
+    left: 50%;
+    position: absolute;
+    }
+
+    .cssload-heartL {
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgb(252, 0, 101);
+    background-color: rgb(252, 0, 101);
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -o-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -ms-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -webkit-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -moz-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    transform: translate(-28px, -27px);
+    -o-transform: translate(-28px, -27px);
+    -ms-transform: translate(-28px, -27px);
+    -webkit-transform: translate(-28px, -27px);
+    -moz-transform: translate(-28px, -27px);
+    }
+
+    .cssload-heartR {
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgb(252, 0, 101);
+    background-color: rgb(252, 0, 101);
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    transform: translate(28px, -27px);
+    -o-transform: translate(28px, -27px);
+    -ms-transform: translate(28px, -27px);
+    -webkit-transform: translate(28px, -27px);
+    -moz-transform: translate(28px, -27px);
+    animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -o-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -ms-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -webkit-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -moz-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    }
+
+    .cssload-square {
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgb(252, 0, 101);
+    background-color: rgb(252, 0, 101);
+    position: relative;
+    display: block;
+    content: '';
+    transform: scale(1) rotate(-45deg);
+    -o-transform: scale(1) rotate(-45deg);
+    -ms-transform: scale(1) rotate(-45deg);
+    -webkit-transform: scale(1) rotate(-45deg);
+    -moz-transform: scale(1) rotate(-45deg);
+    animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -o-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -ms-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -webkit-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -moz-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    }
+
+    .cssload-shadow {
+    top: 97px;
+    left: 50%;
+    content: '';
+    position: relative;
+    display: block;
+    bottom: -.5em;
+    width: 1em;
+    height: .24em;
+    background-color: rgb(215,215,215);
+    border: 1px solid rgb(215,215,215);
+    border-radius: 50%;
+    animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -o-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -ms-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -webkit-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    -moz-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    }
+
+    @keyframes cssload-square {
+    50% {
+        border-radius: 100%;
+        transform: scale(0.5) rotate(-45deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
+    }
+
+    @-o-keyframes cssload-square {
+    50% {
+        border-radius: 100%;
+        -o-transform: scale(0.5) rotate(-45deg);
+    }
+
+    100% {
+        -o-transform: scale(1) rotate(-45deg);
+    }
+    }
+
+    @-ms-keyframes cssload-square {
+    50% {
+        border-radius: 100%;
+        -ms-transform: scale(0.5) rotate(-45deg);
+    }
+
+    100% {
+        -ms-transform: scale(1) rotate(-45deg);
+    }
+    }
+
+    @-webkit-keyframes cssload-square {
+    50% {
+        border-radius: 100%;
+        -webkit-transform: scale(0.5) rotate(-45deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate(-45deg);
+    }
+    }
+
+    @-moz-keyframes cssload-square {
+    50% {
+        border-radius: 100%;
+        -moz-transform: scale(0.5) rotate(-45deg);
+    }
+
+    100% {
+        -moz-transform: scale(1) rotate(-45deg);
+    }
+    }
+
+    @keyframes cssload-heart {
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+    }
+
+    @-o-keyframes cssload-heart {
+    50% {
+        -o-transform: rotate(360deg);
+    }
+
+    100% {
+        -o-transform: rotate(720deg);
+    }
+    }
+
+    @-ms-keyframes cssload-heart {
+    50% {
+        -ms-transform: rotate(360deg);
+    }
+
+    100% {
+        -ms-transform: rotate(720deg);
+    }
+    }
+
+    @-webkit-keyframes cssload-heart {
+    50% {
+        -webkit-transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(720deg);
+    }
+    }
+
+    @-moz-keyframes cssload-heart {
+    50% {
+        -moz-transform: rotate(360deg);
+    }
+
+    100% {
+        -moz-transform: rotate(720deg);
+    }
+    }
+
+    @keyframes cssload-heartL {
+    60% {
+        transform: scale(0.4);
+    }
+    }
+
+    @-o-keyframes cssload-heartL {
+    60% {
+        -o-transform: scale(0.4);
+    }
+    }
+
+    @-ms-keyframes cssload-heartL {
+    60% {
+        -ms-transform: scale(0.4);
+    }
+    }
+
+    @-webkit-keyframes cssload-heartL {
+    60% {
+        -webkit-transform: scale(0.4);
+    }
+    }
+
+    @-moz-keyframes cssload-heartL {
+    60% {
+        -moz-transform: scale(0.4);
+    }
+    }
+
+    @keyframes cssload-heartR {
+    40% {
+        transform: scale(0.4);
+    }
+    }
+
+    @-o-keyframes cssload-heartR {
+    40% {
+        -o-transform: scale(0.4);
+    }
+    }
+
+    @-ms-keyframes cssload-heartR {
+    40% {
+        -ms-transform: scale(0.4);
+    }
+    }
+
+    @-webkit-keyframes cssload-heartR {
+    40% {
+        -webkit-transform: scale(0.4);
+    }
+    }
+
+    @-moz-keyframes cssload-heartR {
+    40% {
+        -moz-transform: scale(0.4);
+    }
+    }
+
+    @keyframes cssload-shadow {
+    50% {
+        transform: scale(0.5);
+        border-color: rgb(228,228,228);
+    }
+    }
+
+    @-o-keyframes cssload-shadow {
+    50% {
+        -o-transform: scale(0.5);
+        border-color: rgb(228,228,228);
+    }
+    }
+
+    @-ms-keyframes cssload-shadow {
+    50% {
+        -ms-transform: scale(0.5);
+        border-color: rgb(228,228,228);
+    }
+    }
+
+    @-webkit-keyframes cssload-shadow {
+    50% {
+        -webkit-transform: scale(0.5);
+        border-color: rgb(228,228,228);
+    }
+    }
+
+    @-moz-keyframes cssload-shadow {
+    50% {
+        -moz-transform: scale(0.5);
+        border-color: rgb(228,228,228);
+    }
+    }      
+    
+    .section-three 
+    {
+        background-color: #D22D2D; 
         display: flex;
         justify-content: center;
+        align-items: center;
     }
-    
-    .banner-text 
-    {
-        margin: 200px 0 200px 0;
-        width: 80%;    
-    }
-    
-    .banner-text .banner-heading 
-    {
-        color: #f8fafc;
-        text-transform: uppercase;
-        font-size: 8.5rem;
-        -webkit-text-stroke: 5px #000000;   
-    }
-    
-    .banner-text .banner-heading-one
-    {
-        color: #f8fafc;
-        text-transform: uppercase;
-        text-decoration: underline white;
-        font-size: 8.5rem;
-        -webkit-text-stroke: 5px #000000;
-        margin-bottom: 75px;    
-    }
-    
-    .banner-text  p 
-    {
-        color: #f8fafc;
-        font-size: 3.5rem;
-        font-weight: 700;
-        -webkit-text-stroke: 2px #000000;
-        
-    }
-    
-    
-    /* Intro section */
-    
-    .intro-section 
-    {
-      width: 98%;
-      height: 1080px;
-      border: 5px solid black;
-      margin: 0 auto;
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-    
-    .intro-section 
-    {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .intro-section h2 
-    {
-      font-size: 2.5rem;
-      text-align: center;
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-    
-    .services-container 
-    {
-      width: 98%;
-      height: 1080px;
-      border: 5px solid black;
-      margin: 0 auto;
-      margin-bottom: 50px;
-      padding: 50px;
-    }
-    
-    .services-container 
-    {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 125px;
-    }
-    
-    .services-container div 
-    {
-      width: 24%;
-      height: 48%;
-      border-radius: 20px;
-      font-size: 2.25rem;
-      font-weight: bold;
-    }
-    
-    .services-container div 
-    {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .services-container .card 
-    {
-      transform-style: preserve-3d;
-      transition: ease-in-out 800ms;
-    }
-    
-    .services-container .card:hover 
-    {
-      transform: rotate(360deg) scale(0.6);
-      
-    }
-    
-    .item-1 
-    {
-      background-color: #f8fafc;
-      color: #000000;
-    }
-    
-    .item-2 
-    {
-      background-color: #D9EAFD;
-      text-align: center;
-      color: #000000;
-    }
-    
-    .item-3 
-    {
-      background-color: #D81E5B;
-      color: #000000;
-    }
-    
-    .item-4 
-    {
-      background-color: #000000;
-      color: white;
-      text-align: center;
-    }
-    
-    .item-5 
-    {
-      background-color: #f8fafc;  
-      color: #000000;
-    }
-    
-    .item-6 
-    {
-      background-color: #000000;
-      color: white;
-      text-align: center;
-    }
-    
-    .item-7 
-    {
-      background-color: #D9EAFD;
-      text-align: center;
-      color: #000000;
-    }
-    
-    .item-8 
-    {
-      background-color: #D81E5B;
-      text-align: center;
-      color: #000000;
-    }
-    
-    
-    .services-container .active:hover 
-    {
-      box-shadow: -3px 4px 25px 0px rgba(0,0,0,1);
-    }
-    
-    
-    /* About */
-    
-    .about-section 
-    {
-      margin: 0 auto;
-      margin-bottom: 25px;
-    }
-    
-    .about-section 
-    {
-      width: 98%;
-      height: 1080px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    .about-child1 
-    {
-      background-color: #f8fafc;
-      width: 50%;
-      height: 100%;
-    }
-    
-    .about-child1 .image 
-    {
-      display: block;
-      width: 500px;
-      padding: 3rem;
-      /* background-color: red; */
-    }
-    
-    .about-child1 .image img 
-    {
-      width: 100%;
-      border-radius: 20px;
-    }
-    
-    .about-child1 h2 
-    {
-      display: block;
-      font-size: 4rem;
-      font-weight: bold;
-      text-align: center;
-    }
-    
-    .about-child1 p 
-    {
-      font-weight: bold;
-      display: block;
-      font-size: 2rem;
-      text-align: center;
-    }
-    
-    .about-child1 button 
-    {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      padding-left: 8rem;
-      padding-right: 8rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      display: block;
-      text-align: center;
-      font-size: 1.5rem;
-      background-color: #000000;
-      margin-bottom: 25px;
-    }
-    
-    .about-child1 .icon-container 
-    {
-      margin-top: 25px;
-      width: 50%;
-      font-size: 2.5rem;
-      display: flex;
-    
-      justify-content: center;
-      gap: 50px;
-    }
-    
-    .about-child1 
-    {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    
-    .about-child2 
-    {
-      background-color: #D9EAFD;
-      width: 50%;
-      height: 100%;
-    }
-    
-    .about-child2 
-    {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .about-child2Text 
-    {
-      text-align: center;
-    }
-    
-    .about-child2Text h2
-    {
-      font-size: 5rem;
-      padding: 12px 12px 12px 12px;
-      font-weight: 700;
-      margin-bottom: 35px;
-    }
-    
-    .about-child2Text p 
-    {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 12px 12px 12px 12px;
-    }
-    
-    .about-child2 .button-group 
-    {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 12px 12px 12px 12px;
-    }
-    
-    .about-child2 .button-group .btn 
-    {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      padding-left: 8rem;
-      padding-right: 8rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      text-align: center;
-      font-size: 1.5rem;
-      background-color: #000000;
-    }
-    
-    
-    /* Media queries */
-    
-    @media only screen and (max-width: 700px) 
-    {
-    
-      .nav-item:hover 
-      {
-        border-bottom: 0px;
-      }
-    
-      .banner-text .banner-heading 
-      {
-          color: #f8fafc;
-          text-transform: uppercase;
-          font-size: 4rem;
-          -webkit-text-stroke: 1px #000000;   
-      }
-      
-      .banner-text .banner-heading-one
-      {
-          color: #f8fafc;
-          text-transform: uppercase;
-          text-decoration: underline white;
-          font-size: 4rem;
-          -webkit-text-stroke: 1px #000000;
-          margin-bottom: 75px;    
-      }
-    
-    .banner-text  p 
-      {
-          color: #f8fafc;
-          font-size: 2rem;
-          font-weight: 700;
-          -webkit-text-stroke: 0.5px #000000;
-          
-      }
-    
-      .intro-section 
-      {
-        border: transparent;
-      }
-    
-      .intro-section h2 
-      {
-    
-        padding-left: 50px;
-        padding-right: 50px;
-      }
-    
-      /* .services-container .card:hover 
-      {
-    
-      } */
-    
-    } 
-    
-    @media only screen and (max-width: 450px) 
-    {
-      .about-child1 h2 
-      {
-        display: block;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-      }
-      
-      .about-child1 p 
-      {
-        font-weight: bold;
-        display: block;
-        font-size: 1rem;
-        text-align: center;
-      }
-    } 
-    
-    
-    @media only screen and (max-width: 900px)  
-    {
-      .services-container 
-      {
-        border: 0;
-        gap: 10px;
-        height: auto;
-        padding: 0 10px 0 10px;  
-        margin-bottom: 25px;
-      }
-      
-      .services-container .active  
-      {
-        width: 100%;
-        height: 500px;
-        border: transparent;
-        margin-bottom: 1.5rem;
-      }
-    
-      .services-container .item-1 
-      {
-        order: 7;
-        height: 100px;
-        width: 100%;
-        background-color: red;
-        display: none;
-      }
-    
-      .services-container .item-5 
-      {
-        order: 8;
-        height: 100px;
-        width: 100%;
-        background-color: red;
-        display: none;
-      }
-    
-      .about-child1 
-      {
-        width: 100%;
-      }
-    
-      .about-child2 
-      {
-        width: 100%;
-      }
-    
-    
-    }
-    
-    @media only screen and (max-width: 1200px) 
-    {
-      .services-container div
-      {
-        font-size: 20px;
-      }
-    
-      .about-child2Text h2 
-      {
-        font-size: 2rem;
-      }
-    
-      .about-child2 .button-group 
-      {
-        flex-wrap: wrap
-      }
-    
-      .about-child2Text p 
-      {
-        font-size: 0.9rem;
-        margin: 12px 12px 12px 12px;
-      }
-    
-      .about-child2 .button-group .btn 
-      {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: center;
-        font-size: 0.75rem;
-        background-color: #000000;
-      }
-    
-    }
-    
-    @media only screen and (max-width: 1400px) 
-    {
-    
-    
-      .about-child2 .button-group 
-      {
-        flex-wrap: wrap
-      }
-    }
-</style>
 
+    .section-three video 
+    {
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .section-four
+    {       
+        background-color: #9A1212; 
+    }    
+
+    @media (max-width: 1200px) 
+    {
+
+        .section-two .imgB {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width:600px) 
+    {
+
+
+        .section-one .s1-child h1
+        {
+            font-size: 2rem;
+        }
+
+
+
+        .cssload-main * {
+        font-size: 62px;
+        }
+
+        .section-two .imgB {
+            width: 100px;
+            height: 100px;
+        }           
+            
+
+    }
+
+    @media (max-width:500px) 
+    {
+
+        .section-one .s1-child h1
+        {
+            font-size: 1.5rem;
+        }        
+
+        .cssload-main * {
+        font-size: 58px;
+        }
+
+    }    
+
+    @media (max-width:350px) 
+    {
+
+        .section-one .s1-child h1
+        {
+            font-size: 1rem;
+        }           
+            
+
+    }    
+</style>
 
 </head>
 <body>
-    <!-- Navigation bar -->
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+    <div class="section section-one">
+
+        <img src="./sectionOneImage.png" alt="Responsive Christmas Image" >        
+        <div class="img-text">
+            <div class="s1-child">
+                <h1 class=" playfair-display-regular text-white text-center">
+                    Merry Christmas
+                </h1>                       
+                <h1 class="great-vibes-regular text-white text-center">
+                    Lesleigh
+                </h1>
+
+            </div>
+
+        </div>
+    </div>    
+
+    <div class="section section-two">
+        <audio  id="myAudio">
+            <source src="./smack.mp3" type="audio/mp3">
+        </audio>
+
+        <img src="./Gift_section.png" alt="Responsive Image" class="imgA">        
+        <img src="./peach.png" alt="picture of a peach" class="imgB imgAnimation" id="imgB">     
+
         
-        <a href="#Home" id="Home" class="navbar-brand londrina-solid-regular">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                
-                <li class="nav-item londrina-solid-regular">
-                    <a href="#" class="nav-link">
-                        Work
-                    </a>
-                </li>
-                <li class="nav-item londrina-solid-regular">
-                    <a href="https://github.com/404" class="nav-link" target="_blank">
-                        Store                        
-                    </a>                    
-                </li>
-                <li class="nav-item londrina-solid-regular">
-                    <a href="#About" class="nav-link">
-                        About
-                    </a>                    
-                </li>
-                <li class="nav-item londrina-solid-regular">
-                    <a href="#Contact" class="nav-link">
-                        Contact
-                    </a>                    
-                </li>
-
-            </ul>
-        </div>
-
-    </nav>
-
-    <!-- Banner section -->
-    <div class="banner">
-        <div class="banner-text">
-
-            <h1 class="banner-heading josefin-slab-subheadings"><b>Be</h1>
-            <h1 class="banner-heading-one josefin-slab-subheadings"><b>Unique</b></h1>
-    
-            <p class="merriweather-regular">Life is too short to imitate sheep!</p>
-            <p class="merriweather-regular">Make sure your website stands out</p>
-            <p class="merriweather-regular">from the herd</p>
-
-        </div>
-
     </div>
 
-    <!-- Intro section -->
-    <div class="intro-section">
-        <h2 class="josefin-slab-subheadings ">
-            Hi, my name is Ashish. I create <b>Beautiful</b> and <b> Functional </b>
-            <br>
-            software for emerging businesses.
-            <br>
-            Below are a few of the services I provide
-        </h2>
-    </div>
 
-    <!-- Services  -->
-     <div class="services-container londrina-solid-regular">
-        <!-- Row 1 -->
-        <div class="item-1">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => 
+        {
+            // all my js here
+            let smackCount = 0;
+            const imgB = document.querySelector("#imgB");
+            const audio = document.querySelector("#myAudio");
+
             
-        </div>
+            imgB.addEventListener("click", () => {
+                setTimeout(() => {
 
-        <div class="item-2 active card">
-            UI <br>
-            Development
-        </div>
+                    if (smackCount <= 2) {
+                        audio.play();
+                        smackCount += 1;
+                    } else {
+                        imgB.classList.remove("imgAnimation");
+                    }
 
-        <div class="item-3 active card">
-            Database <br>
-            Design, <br>
-            Implementation <br>
-            & <br>
-            Management
+                    console.log(smackCount);
+                }, 1200); // delay in ms
+            });
 
-        </div>
-            
-        <div class="item-4 active card">
-            GUI <br>
-            Development
-        </div>
+            imgB.addEventListener("touchstart", () => {
+                setTimeout(() => {
 
-        <!-- Row 2 -->
-        <div class="item-5 ">
+                    if (smackCount <= 2) {
+                        audio.play();
+                        smackCount += 1;
+                    } else {
+                        imgB.classList.remove("touchstart");
+                    }
 
-        </div>
-
-        <div class="item-6 active card">
-            UX <br>
-            Development            
-
-        </div>
-
-        <div class="item-7 active card">
-            Software <br>
-            Documentation
-        </div>
-
-        <div class="item-8 active card">
-            Application <br>
-            Development
-        </div>    
-     </div>
-
-
-
-    <!-- About Me -->
-     <div class="about-section josefin-slab-subheadings " >
-
-        <div class="about-child1">
-            <div class="image">
-                <img src="https://github.com/ThePowerfulProgrammer/Selfie/blob/main/shaved%20selfie.jpg?raw=true" alt="A selfie of me the developer">
-            </div>
-
-            <h2> &lt;Ashish Ramnath&gt;</h2>
-            <p>Software Engineer (4th year)</p>
-            
-            <button type="button" class="btn btn-dark" id="Contact">Email me</button>
-
-            <div class="icon-container">
-                <a href="https://github.com/ThePowerfulProgrammer" target="_blank">
-                    <i class="fa-brands fa-github" style="color:#000000;"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/ashish-ramnath/" target="_blank">
-                    <i class="fa-brands fa-linkedin" style="color: #000000;"></i>
-                </a>
-
-                <a href="https://www.instagram.com/ashish_0301?igsh=MTA4M3lkdHh2MHdzbg==" target="_blank">
-                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                </a>                                
-            </div>
-        </div>
-
-        <div class="about-child2" id="About">
-            
-            <div class="about-child2Text">
-                <h2 class="">
-                    &lt;/About Me&gt
-                </h2>
-
-                <p class="text-break">
-                    Hi, I am Ashish Ramnath.
-                    <br>
-                    My background is in Computer Science with a foucs on Software 
-                    Development.
-                    <br>
-                    I understand the finanical side of development and the rise of 
-                    unforeseen costs, <br> I am eager to assist you in bridging the gap between
-                    afforable and functional software <br> for your small business.
-                    <br>
-                    I am skilled in project management, software development and
-                    user communication.
-                </p>
-
-                <div class="button-group">
-                    <button type="button" class="btn btn-dark">Resume</button>
-                    <button type="button" class="btn btn-dark">Portfolio</button> 
-                 </div>
-            </div>
-
-
-
-        </div>
-
-
-     </div>
+                    console.log(smackCount);
+                }, 1200); // delay in ms
+            });            
 
 
 
 
-    <script src="app.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+        })
+    </script>
 </html>
