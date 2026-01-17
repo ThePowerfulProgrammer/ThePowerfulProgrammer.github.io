@@ -215,6 +215,7 @@
 
 /* Media Queries */
 
+
 @media screen and (max-width: 600px) 
 {
   .introduction 
@@ -224,7 +225,7 @@
 
   .introduction-child-1  
   {
-    padding: 30px;
+    padding: 20px;
   }  
 
   .introduction-child-1 h1 
@@ -236,5 +237,22 @@
   {
     font-size: 2rem;
   }  
+
+}
+
+@media screen and (max-width: 400px) 
+{
+
+
+  .introduction-child-1  
+  {
+    padding: 10px;
+  }  
+
+  .introduction-child-1 h1 
+  {
+    font-size: 4em;
+  }
+  
 
 }
