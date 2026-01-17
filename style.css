@@ -1,0 +1,240 @@
+/* Fira San Fonts */
+
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* Cardo Fonts */
+.cardo-regular {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cardo-bold {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cardo-regular-italic {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Didact Gothic Fonts */
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Styles */
+
+.navbar 
+{
+    border-bottom: 1px solid black;
+
+}
+
+.navbar-nav 
+{
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav-item:hover 
+{
+    border-bottom: 1px solid blue;
+}
+
+.introduction 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.introduction-child-1 
+{
+    background-color: white;
+    padding: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.introduction-child-1 h1 
+{
+    font-size: 6rem
+}
+
+.introduction-child-1 h3 
+{
+    font-size: 3rem;
+}
+
+.introduction-child-1 button 
+{
+  background-color: blue;
+  font-size: large;
+  color:white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  border: 0px; 
+}
+
+.introduction-child-1 button a 
+{
+  text-decoration: none;
+  color: white;
+}
+
+.introduction-child-1 button:hover 
+{
+  background-color: black;
+} 
+
+.introduction-child-2 img
+{
+  width: 100%;  
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) 
+{
+  .introduction 
+  {
+    flex-wrap: wrap;
+  }
+
+  .introduction-child-1  
+  {
+    padding: 30px;
+  }  
+
+  .introduction-child-1 h1 
+  {
+    font-size: 4.5em;
+  }
+  
+  .introduction-child-1 h3 
+  {
+    font-size: 2rem;
+  }  
+
+}
