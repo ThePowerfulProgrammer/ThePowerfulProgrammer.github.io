@@ -1,5 +1,10 @@
 /* Fira San Fonts */
 
+body 
+{
+  scroll-behavior: smooth;
+}
+
 .fira-sans-thin {
   font-family: "Fira Sans", sans-serif;
   font-weight: 100;
@@ -140,8 +145,13 @@
 
 .navbar 
 {
-    border-bottom: 1px solid black;
+    border-bottom: none;
 
+}
+
+.navbar-brand:hover
+{
+  color: blue;
 }
 
 .navbar-nav 
@@ -174,21 +184,21 @@
 
 .introduction-child-1 h1 
 {
-    font-size: 6rem
+    font-size: 7rem
 }
 
 .introduction-child-1 h3 
 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .introduction-child-1 button 
 {
-  background-color: blue;
-  font-size: large;
+  background-color: #004E98;
+  font-size: 1.5em;
   color:white;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 5px;
   padding-bottom: 5px; 
   border: 0px; 
@@ -208,12 +218,248 @@
 .introduction-child-2 img
 {
   width: 100%;  
+  height: auto;
+  display: block;
+}
+
+/* Services */
+
+#services-headline 
+{
+  font-size: 10rem;
+  color: #004E98;
+  text-decoration:underline ;
+  text-transform: capitalize;
+}
+
+#services-overview 
+{
+  font-size: 1.8rem;
+}
+
+#services-available
+{
+  font-size: 4rem;
+  color: blue;
 }
 
 
+.services-container 
+{
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+.services-container .card 
+{
+  width: 45%;
+  height: 250px;
+}
+
+.services-container .card .btn
+{
+  color:black;
+}
+
+.services-container .card .btn:hover
+{
+  color:white;
+}
+
+.btn-hover 
+{
+  background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+}
+
+.btn-hover {
+  animation: glowing 1300ms infinite;
+}
+
+.flip-card {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.services-container .services-card 
+{
+  background: #1C427F;
+  background: linear-gradient(315deg, #1C427F, #CB1173);  
+  color:white
+}
+
+.services-container .services-portfolio 
+{
+  background: #96327C;
+  background: linear-gradient(45deg, #96327C, #07EEC1); 
+  color:white 
+}
+
+.services-container .card-title 
+{
+  text-decoration: underline;
+}
+
+
+.services-container .card 
+{
+  transition: box-shadow 1.0s ease;
+}
+
+.services-container .card:hover 
+{
+
+  box-shadow: 
+  rgba(0, 0, 0, 0.3) 0px 40px 80px 20px, 
+  rgba(0, 0, 0, 0.2) 0px 0px 60px 15px, 
+  rgba(0, 0, 0, 0.15) 0px -20px 50px 10px;
+
+}
 
 /* Media Queries */
+
+@media screen and (min-width: 1600px) 
+{
+  .introduction-child-1 h1 
+  {
+    font-size: 8rem;
+  }
+
+  .introduction-child-1 h3 
+  {
+    font-size: 5rem;
+  }
+
+  .introduction-child-1 button 
+  {
+    font-size: 2rem;
+    color:white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1400px) 
+{
+  #services-headline 
+  {
+    font-size: 6rem;
+  }
+
+  #services-overview 
+  {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 1100px) 
+{
+
+}
+
+@media screen and (max-width: 1000px)
+{
+
+  .introduction-child-1 h1 
+  {
+    font-size: 5rem;
+  }
+  
+  .services-container 
+  {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .services-container .card 
+  {
+    width: 100%;
+    height: 220px;
+
+  }
+
+}
+
+@media screen and (max-width: 825px) 
+{
+  
+  .introduction-child-1 h1 
+  {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 701px) 
+{
+  
+  .introduction-child-1 h1 
+  {
+    font-size: 3rem;
+  }
+}
 
 
 @media screen and (max-width: 600px) 
@@ -230,7 +476,7 @@
 
   .introduction-child-1 h1 
   {
-    font-size: 4.5em;
+    font-size: 4.5rem;
   }
   
   .introduction-child-1 h3 
@@ -240,10 +486,29 @@
 
 }
 
-@media screen and (max-width: 400px) 
+
+@media screen and (max-width: 990px)
 {
 
+  .services-container .card 
+  {
+    height: 280px;
+  }
 
+}
+
+@media screen and (max-width: 450px) 
+{
+
+  #services-headline 
+  {
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) 
+{
   .introduction-child-1  
   {
     padding: 10px;
@@ -251,8 +516,26 @@
 
   .introduction-child-1 h1 
   {
-    font-size: 4em;
+    font-size: 4rem;
   }
   
+}
 
+@media screen and (max-width: 990px)
+{
+
+  .services-container .card 
+  {
+    height: 280px;
+  }
+}
+
+
+@media screen and (max-width: 440px)
+{
+
+  .services-container .card 
+  {
+    height: 300px;
+  }
 }
